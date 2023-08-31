@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./index.js"></script>
+</head>
+<body>
+    <main>
+        <h1>ADDRESS</h1>
+        <div>
+
+            <input id="input" type="text" placeholder="Address" style="width: 200px;"/>
+            <input id="zipCode" type="text" placeholder="〒" style="width: 100px;"/>
+            <select id="select" size={10} style="width: 200px;"></select>
+            <input id="position" type="text" placeholder="座標" style="width: 200px;"/>
+        </div>
+  
+        <iframe src="https://maps.google.co.jp/maps?output=embed&q=${position}" width="500" height="500"></iframe>
+    </main>
+</body>
+</html>
