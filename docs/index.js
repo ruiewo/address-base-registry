@@ -15,7 +15,10 @@ function main() {
     const townList = towns.filter((t) => t.fullname.includes(value));
 
     select.innerHTML = townList
-      .map((t) => `<option value="${t.町字id}">${t.fullname}</option>`)
+      .map(
+        (t) =>
+          `<option value="${t.町字id}" data-id1="${t.全国地方公共団体コード}" data-id2="${t.町字id}">${t.fullname}</option>`,
+      )
       .join('');
   });
 
